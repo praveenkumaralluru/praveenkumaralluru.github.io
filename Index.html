@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praveenkumar Alluri | Security Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--primary:#38bdf8;
+--bg:#020617;
+--card:rgba(255,255,255,0.05);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:var(--bg);
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+flex-wrap:wrap;
+}
+
+nav h2{color:var(--primary);}
+
+nav div{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{color:var(--primary);}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 20px 40px;
+}
+
+.profile-img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:4px solid var(--primary);
+box-shadow:0 0 20px var(--primary);
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:clamp(24px,5vw,48px);
+}
+
+.hero span{color:var(--primary);}
+
+.hero p{
+max-width:600px;
+font-size:14px;
+opacity:0.9;
+margin-top:10px;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:var(--primary);
+cursor:pointer;
+font-weight:600;
+}
+
+/* SECTION */
+section{
+padding:60px 5%;
+}
+
+.title{
+color:var(--primary);
+font-size:clamp(22px,4vw,30px);
+margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+/* CARD */
+.card{
+background:var(--card);
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* DASHBOARD */
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.stat{
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat h2{color:var(--primary);}
+
+/* LIST */
+ul{
+padding-left:20px;
+margin-top:10px;
+}
+
+li{
+margin-bottom:5px;
+font-size:14px;
+}
+
+/* CONTACT */
+.contact p{
+margin:5px 0;
+font-size:14px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:15px;
+background:rgba(255,255,255,0.05);
+font-size:14px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablets */
+@media(max-width:768px){
+nav{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+.hero{
+padding-top:120px;
+}
+
+.profile-img{
+width:120px;
+height:120px;
+}
+}
+
+/* Mobile */
+@media(max-width:480px){
+nav a{
+font-size:12px;
+}
+
+.btn{
+padding:10px 20px;
+font-size:12px;
+}
+
+.stat h2{
+font-size:18px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Praveen</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<img src="https://via.placeholder.com/150" class="profile-img">
+
+<h1>Hi, I'm <span>Praveenkumar Alluri</span></h1>
+
+<p>
+Security Analyst with 2+ years of experience in network monitoring, incident response, and enterprise network operations.
+</p>
+
+<button class="btn" onclick="downloadPDF()">Download Resume</button>
+</section>
+
+<!-- DASHBOARD -->
+<section>
+<h2 class="title">Cybersecurity Dashboard</h2>
+
+<div class="dashboard">
+<div class="stat"><h2>2+ Years</h2><p>Experience</p></div>
+<div class="stat"><h2>100+</h2><p>Incidents</p></div>
+<div class="stat"><h2>99.9%</h2><p>Uptime</p></div>
+<div class="stat"><h2>24/7</h2><p>Monitoring</p></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="title">Professional Summary</h2>
+
+<div class="card">
+<p>
+Security Analyst with 2+ years of experience in network monitoring, incident response, and enterprise network operations. Proven ability to detect, analyze, and resolve network incidents in real-time environments. Strong expertise in TCP/IP, VPNs, tunneling, and incident management systems, with a solid understanding of threat detection and security operations workflows. Adept at maintaining system integrity, minimizing downtime, and supporting secure infrastructure. Seeking to contribute to a high-performing cybersecurity team.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="title">Core Competencies</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Security Operations</h3>
+<p>Security Monitoring and Alert Analysis, Incident Response and Resolution, Threat Detection and Root Cause Analysis, Log Analysis and Incident Tracking, Risk Identification and Mitigation</p>
+</div>
+
+<div class="card">
+<h3>Tools and Technologies</h3>
+<p>Wireshark, Nmap, Remedy Ticketing Tool, Putty</p>
+</div>
+
+<div class="card">
+<h3>Networking and Systems</h3>
+<p>TCP/IP, VPN, MPLS, Tunneling, Network Troubleshooting and Traffic Analysis, Linux, Windows</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2 class="title">Professional Experience</h2>
+
+<div class="card">
+<h3>Security Analyst – Network Monitoring and Incident Response</h3>
+<p>Softenger India Pvt. Ltd | Oct 2025 – Present</p>
+
+<ul>
+<li>Monitored and analyzed network alerts and incidents, ensuring rapid detection of potential security threats.</li>
+<li>Executed incident response procedures, reducing service downtime and restoring operations efficiently.</li>
+<li>Performed root cause analysis (RCA) on tunnel failures and network disruptions.</li>
+<li>Managed incident lifecycle using Remedy ticketing system, ensuring accurate classification and resolution.</li>
+<li>Collaborated with cross-functional teams to mitigate risks and enhance system security posture.</li>
+<li>Maintained detailed incident documentation for audit, compliance, and reporting purposes.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Network Security Engineer</h3>
+<p>Indovision Services Pvt. Ltd | Jul 2023 – Oct 2025</p>
+
+<ul>
+<li>Managed enterprise network infrastructure supporting high-availability and secure operations.</li>
+<li>Executed traffic shifting, tunnel correction, and circuit decommissioning in live production environments.</li>
+<li>Analyzed network topology and service data to troubleshoot and resolve complex issues.</li>
+<li>Monitored real-time network performance using Putty dashboards, MS Teams, and Outlook alerts.</li>
+<li>Coordinated with field and deployment teams to resolve critical incidents within SLA timelines.</li>
+<li>Contributed to maintaining network stability, integrity, and operational security.</li>
+</ul>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Real-Time Network Monitoring System</h3>
+<p>Monitored enterprise network traffic using dashboards and alert systems. Detected anomalies and ensured uptime.</p>
+</div>
+
+<div class="card">
+<h3>Incident Response Management</h3>
+<p>Handled incidents using Remedy system and reduced resolution time with structured workflows.</p>
+</div>
+
+<div class="card">
+<h3>Tunnel Failure RCA Analysis</h3>
+<p>Performed root cause analysis on MPLS and VPN failures to improve network stability.</p>
+</div>
+
+<div class="card">
+<h3>Wireshark Traffic Analysis</h3>
+<p>Captured and analyzed packets to detect suspicious activities and threats.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2 class="title">Education</h2>
+
+<div class="card">
+<p>Master of Computer Applications (MCA) – Sri Venkateswara University | 2021 | 76.7%</p>
+</div>
+
+<div class="card">
+<p>Bachelor of Science (Computer Applications) – Vignan Degree College | 2018 | 79.4%</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="title">Contact</h2>
+
+<div class="card">
+<p>📞 Mobile: +91 8466086785</p>
+<p>📧 Email: praveenkumaralluri28@gmail.com</p>
+<p>📍 Location: Hyderabad, Telangana</p>
+<p>🔗 LinkedIn: Add your LinkedIn link</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Praveenkumar Alluri | Security Analyst Portfolio</p>
+</footer>
+
+<script>
+function downloadPDF(){
+window.print();
+}
+</script>
+
+</body>
+</html>
